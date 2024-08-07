@@ -48,7 +48,6 @@ class AoiBlox {
       );
     } catch (error) {
       console.log(`aoi.blox failed to load. ${error}`);
-      console.log(error)
     }
   }
 
