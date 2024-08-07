@@ -38,7 +38,7 @@ const { AoiClient, Util } = require("aoi.js");
 const { AoiBlox } = require("@aoijs/aoi.blox");
 
 const client = new AoiClient({
-  token || cookiedata: "Discord Bot Token",
+  token: "Discord Bot Token",
   prefix: "Discord Bot Prefix",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
   events: ["onMessage", "onInteractionCreate"],
