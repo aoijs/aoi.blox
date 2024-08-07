@@ -3,17 +3,17 @@ const noblox = require("noblox.js");
 // credit to aoi.canvas akaka Lordex.js
 
 module.exports = {
-    name: "$demote",
+    name: "$sendFriendRequest",
     type: "djs",
     code: async (d) => {
         const data = d.util.aoiFunc(d);
-        let [groupid, user, token] = data.inside.splits;
+        let [user, token] = data.inside.splits;
         try {
             let cookiedata = d.client.Aoiblox?.cookie;
-        if(!groupid && !user && !token || cookiedata) {
+        if(!user && !token || !cookiedata) {
            return vixError(d, "All three arguments are required: GroupID, Target, Roblox Account Cookie");
-        } else if(groupid && user && token || cookiedata) {
-            let userdata = await noblox.demote({group: groupid, target: user, jar: (token ?? cookiedata)})
+        } else if(user && token || cookiedata) {
+            let userdata = await noblox.sendFriendRequest({ target: user, jar: (token ?? cookiedata)})
             var commanddata = JSON.stringify(userdata);
         }
         data.result = commanddata
