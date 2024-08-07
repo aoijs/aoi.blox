@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^4.1.2",
+    "circular-json": "^0.5.9",
+    "noblox.js": "^4.15.0"
+  },
+  "name": "aoi.vixblox",
+  "version": "1.8.2",
+  "description": "Bring Roblox Moderation to aoi.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hi\""
+  },
+  "homepage": "https://github.com/berticulousnert/vixblox",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berticulousnert/vixblox.git"
+  },
+  "keywords": [
+    "aoi.js",
+    "roblox",
+    "noblox.js",
+    "aoi.vixblox",
+    "aoi",
+    "dbd",
+    "dbd.js"
+  ],
+  "author": "Berticulousnert",
+  "license": "ISC"
+}
