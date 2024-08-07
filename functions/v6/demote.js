@@ -12,7 +12,7 @@ module.exports = {
         if(!groupid && !user && !token || cookiedata) {
            return vixError(d, "All three arguments are required: GroupID, Target, Roblox Account Cookie");
         } else if(groupid && user && token || cookiedata) {
-            let userdata = await noblox.demote({group: groupid, target: user, jar: token || cookiedata})
+            let userdata = await noblox.demote({group: groupid, target: user, jar: (token ?? cookiedata)})
             var commanddata = JSON.stringify(userdata);
         }
         data.result = commanddata

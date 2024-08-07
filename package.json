@@ -5,8 +5,8 @@
     "circular-json": "^0.5.9",
     "noblox.js": "^4.15.0"
   },
-  "name": "aoi.vixblox",
-  "version": "1.8.2",
+  "name": "aoi.blox",
+  "version": "1.0.0",
   "description": "Bring Roblox Moderation to aoi.js",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,9 @@
     "aoi.js",
     "roblox",
     "noblox.js",
-    "aoi.vixblox",
+    "aoi.blox",
     "aoi",
+    "blox",
     "dbd",
     "dbd.js"
   ],

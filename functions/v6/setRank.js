@@ -13,7 +13,7 @@ module.exports = {
         if(!groupid && !user && !change && !token || cookiedata) {
            return vixError(d, "All three arguments are required: GroupID, Target, Rank The rank, roleset ID, name of the role, or the actual Role itself, Roblox Account Cookie");
         } else if(groupid && user && change && token || cookiedata) {
-            let userdata = await noblox.setRank({group: groupid, target: user, rank: change, jar: token || cookiedata || cookiedata})
+            let userdata = await noblox.setRank({group: groupid, target: user, rank: change, jar: (token ?? cookiedata)})
             var commanddata = JSON.stringify(userdata);
         }
         data.result = commanddata

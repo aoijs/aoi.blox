@@ -13,7 +13,7 @@ module.exports = {
         if(!groupid && !token || cookiedata) {
            return vixError(d, "GroupID and token || cookiedata is required.");
         } else if(groupid && token || cookiedata) {
-            let userdata = await noblox.leaveGroup(groupid, token || cookiedata)
+            let userdata = await noblox.leaveGroup(groupid, (token ?? cookiedata))
             var commanddata = JSON.stringify(userdata);
         }
         data.result = commanddata

@@ -13,7 +13,7 @@ module.exports = {
         if(!groupid && !user && accept && !token || cookiedata) {
            return vixError(d, "All three arguments are required: GroupID, Target, Roblox Account Cookie");
         } else if(groupid && user && accept && token || cookiedata) {
-            let userdata = await noblox.handleJoinRequest(groupid, user, accept, token || cookiedata)
+            let userdata = await noblox.handleJoinRequest(groupid, user, accept, (token ?? cookiedata))
             var commanddata = JSON.stringify({
                 groupId: groupid,
                 userId: user,
