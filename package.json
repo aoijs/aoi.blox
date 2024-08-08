@@ -1,21 +1,21 @@
 {
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.7.3",
     "chalk": "^4.1.2",
     "circular-json": "^0.5.9",
-    "noblox.js": "^4.15.0"
+    "noblox.js": "^5.0.1"
   },
-  "name": "aoi.blox",
+  "name": "@aoijs/aoi.blox",
   "version": "1.0.0",
   "description": "Bring Roblox Moderation to aoi.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Hi\""
   },
-  "homepage": "https://github.com/berticulousnert/vixblox",
+  "homepage": "https://github.com/aoijs/aoi.blox",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/berticulousnert/vixblox.git"
+    "url": "git+https://github.com/aoijs/aoi.blox.git"
   },
   "keywords": [
     "aoi.js",
